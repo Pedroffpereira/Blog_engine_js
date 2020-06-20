@@ -1,3 +1,5 @@
+paths=require("path")
 exports.HomePage = function(req,res){
-    res.render("index")
+    path = paths.resolve(__dirname, 'logo.jpg')
+    res.render("index",{path: path})
 }

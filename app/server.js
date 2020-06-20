@@ -6,7 +6,7 @@ const routes_adm = require('./routes/admin/routes_adm.js');
 
 
 app.set('view engine','ejs')
-app.set('Views','./views')
+app.set('Views','./views/')
 app.listen(port, () => console.log(`Example app listening at http://localhos:${port}`))
 
 
