@@ -4,6 +4,7 @@ const port = 3000
 const route_pb = require('./routes/public/routes_pb.js');
 const routes_adm = require('./routes/admin/routes_adm.js');
 
+app.use(express.static('./src/'));
 
 app.set('view engine','ejs')
 app.set('Views','./views/')
