@@ -1,0 +1,16 @@
+
+<% if(news) { %>
+
+  <% for( var i=0; i < news.length; i++) { %>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/<%= news[i].img %>">
+        <div class="card-body">
+          <h6 class="card-title"><%= news[i].text %></h6>
+        </div>
+      </div>
+    </div>
+
+  <% } %>
+
+<% } %>

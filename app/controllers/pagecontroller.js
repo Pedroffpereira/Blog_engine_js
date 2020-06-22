@@ -1,5 +1,7 @@
 paths=require("path")
-exports.HomePage = function(req,res){
-    path = paths.resolve(__dirname, 'logo.jpg')
-    res.render("index",{path: path})
+const {News}=require("../models")
+exports.HomePage = async  function(req,res){
+    var news= await News.findAll()
+    console.log(news)
+    res.render("public/index",{news})
 }
