@@ -3,8 +3,8 @@ const app = express()
 const port = 3000
 const route_pb = require('./routes/public/routes_pb.js');
 const routes_adm = require('./routes/admin/routes_adm.js');
-
-app.use(express.static('./src/'));
+console.log(__dirname)
+app.use('/',express.static(__dirname + '/src/'));
 
 app.set('view engine','ejs')
 app.set('Views','./views/')

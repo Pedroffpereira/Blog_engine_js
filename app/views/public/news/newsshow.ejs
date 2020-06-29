@@ -1,0 +1,19 @@
+<%- include ("../include/head.ejs") -%>
+<%- include ("../include/header.ejs") -%>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h4>   <%= news.title %></h4>
+      Escrito por: <%= news.createdBy %>
+      Publicado em: <%= news.createdAt %>
+      <div class="row">
+            <div class="col-md-8">
+                <%- news.text %>
+            </div>
+            <div class="col-md-4">
+              <img src="/img/newsimg/<%= news.img %>" alt="">  
+            </div>
+        </div>
+      </div>
+    <div class="col-md-2"></div>
+  </div>
